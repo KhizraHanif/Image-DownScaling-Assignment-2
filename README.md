@@ -59,7 +59,7 @@ To enable SIMD (Single Instruction, Multiple Data) instructions in Visual Studio
    - Set "Enable Enhanced Instruction Set" to the desired SIMD instruction set (e.g., AVX2 or SSE2). I have used AVX2. 
 
 4. **Enable Optimization:**
-   - In the same "Code Generation" settings, set "Optimization" to the desired level (e.g., "Maximize Speed (/O2)").
+   - In the same "Code Generation" settings, set "Optimization" to the desired level (e.g., "Maximize Speed (/O2)"). 
 
 5. **Enable Intrinsic Functions:**
    - Under "C/C++" -> "Language," enable "Enable Enhanced Instruction Set" for intrinsics.
