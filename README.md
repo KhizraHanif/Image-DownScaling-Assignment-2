@@ -42,3 +42,33 @@ After building the project, you can run the executable to test the image-scaling
 
 - `Scalarscaling`: Scales down an image using a scalar (non-SIMD) approach.
 - `SIMDscaling`: Scales down an image using SIMD instructions.
+
+# Setting Up Visual Studio for SIMD Programming
+
+To enable SIMD (Single Instruction, Multiple Data) instructions in Visual Studio for this project, follow these steps:                                                   # Steps
+
+1. **Configure Project Properties:**
+   - Right-click on your project in the Solution Explorer.
+   - Select "Properties."
+
+2. **Set Configuration to Release:**
+   - In the Configuration dropdown, select "Release" (for optimized builds).
+
+3. **Choose Target Architecture:**
+   - Under "Configuration Properties," go to "C/C++" -> "Code Generation."
+   - Set "Enable Enhanced Instruction Set" to the desired SIMD instruction set (e.g., AVX2 or SSE2).
+
+4. **Enable Optimization:**
+   - In the same "Code Generation" settings, set "Optimization" to the desired level (e.g., "Maximize Speed (/O2)").
+
+5. **Enable Intrinsic Functions:**
+   - Under "C/C++" -> "Language," enable "Enable Enhanced Instruction Set" for intrinsics.
+
+6. **Verify SIMD Usage:**
+   - In your source code, include the necessary header files for SIMD programming (e.g., `<immintrin.h>` for AVX2).
+   - Utilize SIMD intrinsics in your code.
+
+7. **Build and Run:**
+   - Build your project.
+   - Run the executable to verify SIMD instructions are being used.
+
