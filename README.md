@@ -47,8 +47,8 @@ After building the project, you can run the executable to test the image-scaling
 
 To enable SIMD (Single Instruction, Multiple Data) instructions in Visual Studio for this project, follow these steps:                                                   # Steps
 
-1. **Configure Project Properties:**
-   - Right-click on your project in the Solution Explorer.
+1. **Configure Project Properties:
+   - Right-click on the project in the Solution Explorer.
    - Select "Properties."
 
 2. **Set Configuration to Release:**
@@ -56,7 +56,7 @@ To enable SIMD (Single Instruction, Multiple Data) instructions in Visual Studio
 
 3. **Choose Target Architecture:**
    - Under "Configuration Properties," go to "C/C++" -> "Code Generation."
-   - Set "Enable Enhanced Instruction Set" to the desired SIMD instruction set (e.g., AVX2 or SSE2).
+   - Set "Enable Enhanced Instruction Set" to the desired SIMD instruction set (e.g., AVX2 or SSE2). I have used AVX2. 
 
 4. **Enable Optimization:**
    - In the same "Code Generation" settings, set "Optimization" to the desired level (e.g., "Maximize Speed (/O2)").
@@ -64,11 +64,8 @@ To enable SIMD (Single Instruction, Multiple Data) instructions in Visual Studio
 5. **Enable Intrinsic Functions:**
    - Under "C/C++" -> "Language," enable "Enable Enhanced Instruction Set" for intrinsics.
 
-6. **Verify SIMD Usage:**
-   - In your source code, include the necessary header files for SIMD programming (e.g., `<immintrin.h>` for AVX2).
-   - Utilize SIMD intrinsics in your code.
 
 7. **Build and Run:**
-   - Build your project.
+   - Build project.
    - Run the executable to verify SIMD instructions are being used.
 
