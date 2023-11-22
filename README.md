@@ -10,7 +10,6 @@ This project implements image scaling algorithms in C++. It includes both scalar
 - [Table of Contents](#table-of-contents)
 - [Build Instructions](#build-instructions)
 - [Usage](#usage)
-- [License](#license)
 
 ## Build Instructions
 
