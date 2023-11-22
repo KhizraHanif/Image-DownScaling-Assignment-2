@@ -18,7 +18,7 @@ To build the project, follow these instructions:
 1. Clone the repository:
 
     ```bash
-    git clone[ https://github.com/your-username/image-scaling-project.git](https://github.com/KhizraHanif/Image-DownScaling-Assignment-2.git)
+    git clone[ https [https://github.com/KhizraHanif/Image-DownScaling-Assignment-2.git]
     ```
 
 2. Navigate to the project directory:
